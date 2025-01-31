@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_background"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="32dp">
+
+    <!-- Logo or Image Section -->
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginBottom="24dp"
+        android:contentDescription="@string/image_placeholder"
+        android:src="@drawable/image_02" />
+
+    <!-- Title Section -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins"
+        android:gravity="center"
+        android:text="@string/sign_up"
+        android:textColor="@color/black"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="8dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/sign_up_note"
+        android:layout_marginTop="-10dp"
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        android:layout_marginBottom="24dp" />
+
+    <!-- Form Section -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <!-- Username Field -->
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/input_background"
+            android:fontFamily="@font/poppins"
+            android:hint="@string/username_text"
+            android:padding="16dp"
+            android:textSize="16sp" />
+
+        <!-- Email and OTP Section -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="5"
+            android:layout_marginBottom="16dp">
+
+            <!-- Email Field -->
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:background="@drawable/input_background"
+                android:fontFamily="@font/poppins"
+                android:hint="Email ID"
+                android:padding="16dp"
+                android:textSize="16sp" />
+
+            <Space
+                android:layout_width="16dp"
+                android:layout_height="wrap_content" />
+
+            <!-- Send OTP Button -->
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:background="@drawable/button_background"
+                android:fontFamily="@font/poppins"
+                android:text="Send OTP"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <!-- OTP Field -->
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/input_background"
+            android:fontFamily="@font/poppins"
+            android:hint="Enter OTP"
+            android:padding="16dp"
+            android:textSize="16sp" />
+
+        <!-- Password Field -->
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:background="@drawable/input_background"
+            android:fontFamily="@font/poppins"
+            android:hint="Enter password"
+            android:padding="16dp"
+            android:textSize="16sp" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_background"
+            android:fontFamily="@font/poppins"
+            android:text="Register"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="200dp"
+        android:layout_height="1dp"
+        android:background="@color/devider"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="20dp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Already a member?"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            />
+
+        <TextView
+            android:id="@+id/login_toggle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Login now"
+            android:layout_marginStart="10dp"
+            android:textSize="16sp"
+            android:textColor="@color/purple"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>

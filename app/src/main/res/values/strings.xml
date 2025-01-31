@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">DorLock</string>
+    <string name="welcome_head">Welcome Back!</string>
+    <string name="welcome_note">please enter your details</string>
+
+    <string name="image_placeholder">app image</string>
+    <string name="username_text">Enter username</string>
+    <string name="password_text">Password</string>
+    <string name="sign_in">Sign in</string>
+
+    <string name="not_a_member">Not a member?</string>
+    <string name="register_now">Register now</string>
+
+    <string name="recovery_text"><u>Recover password</u></string>
+
+
+    <string name="sign_up">Register</string>
+    <string name="sign_up_note">let us know about yourself</string>
+</resources>
